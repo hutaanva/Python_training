@@ -6,5 +6,5 @@ while stars < 7:
         while number < stars:
             line += "*"
             number += 1
-        print("line")
+        print(line)
         stars = stars + 1
