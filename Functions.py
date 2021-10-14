@@ -7,17 +7,19 @@
 def print_hello():
     print("Hello Functions!")
 
-def numbers(érték1,érték2):
+def numbers(ertek1,ertek2):
     return ertek1+ertek2
 
-def count_spaces():
-    print("Hány karakterből áll ez a szöveg vajon?")
+def count_spaces(s):
     count = 0
     for c in s:
         if c == " ":
             count += 1
+    return count
 
 def calc_avrg(numbers):
+    if len(numbers) == 0:
+        return 0
     result = 0
     for number in numbers:
         result += number
@@ -35,6 +37,6 @@ print_hello()
 
 #2
 #print(numbers(2,4))
-result = numbers(2,4)
+result = numbers(2 , 3)
 
 
