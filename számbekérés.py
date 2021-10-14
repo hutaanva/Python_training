@@ -26,5 +26,5 @@ for number in numbers:
         restult = result + ", "
     if number > highest:
         highest-number
-print("Ebből a legnagyobb:" highest)
+print("Ebből a legnagyobb:", highest)
 
