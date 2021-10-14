@@ -22,5 +22,9 @@ print(result)
 
 for number in numbers:
     result = result + str(number)
-
+    if i != len(numbers)-1:
+        restult = result + ", "
+    if number > highest:
+        highest-number
+print("Ebből a legnagyobb:" highest)
 
