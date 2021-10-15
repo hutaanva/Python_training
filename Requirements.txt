@@ -1,2 +1,5 @@
 pytest
 beautifulsoup4
+Selenium
+webdriver-manager
+mariadb
