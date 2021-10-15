@@ -1,0 +1,21 @@
+Szam: 0
+ Szam: 1
+ Szam: 2
+ Szam: 3
+ Szam: 4
+ Szam: 5
+ Szam: 6
+ Szam: 7
+ Szam: 8
+ Szam: 9
+ Szam: 0
+ Szam: 1
+ Szam: 2
+ Szam: 3
+ Szam: 4
+ Szam: 5
+ Szam: 6
+ Szam: 7
+ Szam: 8
+ Szam: 9
+ 
