@@ -1,0 +1,520 @@
+istvan.viczian@training360.com
+https://mek.oszk.hu/08400/08435/08435.pdf
+hackerrank.com > jelentkezz beeeee
+
+assembly vagy C natív kódot maga a processor értelmezi
+a forráskódot egy interpreter program (python) az interpreter programot is a proci futtatja egy just in time compilerrel ematt pontosan ugyan olyan gyors a java v python mint a C.
+Pythont használnak Big data műveletekre is.
+
+Kilépés:
+Ctrl+ D
+exit ()
+
+REPL : Read, eval, print, loop.
+Literál: saját értékkel rendelkező input (mint 1, 13,4, "alma")
+Nincs hosszkorlát
+szöveges literál: String. 
+Határolni lehet "" vagy '' között
+
+C: ha valamit lefoglalsz a memóriában akkor fel kell szabadítani és vannak benne mutatok.
+Pythonban nem kell és nincs mutató.
+Többszálon futtatható kódot lehet írni Pythonban.
+Objektum orientált, de lehet procedúrálisan is használni.
+
+TIOBE index mutatja a programozási nyelvek popularitását.
+GO ra érdemes figyelni
+
+https://pep8.org/ 
+coding konvenciók készlete.
+
+Szoftverfejlesztés és Önfejlesztés podcast !!!
+
+operátor + = * /
+operandus 60, 10
+context 10+60
+
+Literál: önmaga tartalmaz egy értéket és nem lehet átírni. 80 az 80as szám.
+Változó: az értéke módosítható 
+Van egy neve és értéke
+Egyszerű változó : 1 érték
+Adatszerkezet: több érték
+
+>>> "Varga" + "Tamás"
+'VargaTamás' >>> Operátorokkal stringeket is össze lehet fűzni
+
+
+
+Értékadás
+Változó NEM kezdődhet számmal. (mert a szám literál)
+>>> trainer= "Istvan"  >>> Trainer a változó,  "Istvan" a sztring literál ebben az esetben
+>>> print ("trainer") >>> változónál nem kell a ""
+trainer
+>>> print (trainer)
+Istvan
+
+>>> age = 70
+>>> age
+70
+>>> print(age)
+70
+"
+
+
+>>> trainer2
+'GallGergely'
+>>> trainer = "KovacsZoltan"
+>>> trainer
+'KovacsZoltan'
+>>> trainer = trainer2  >>> az operátor egyik oldalán nem csak literál hanem változó is szerepelhet így az egyik változó értékét beleírjuk a másik változóba.age2
+>>> trainer
+'GallGergely'
+
+>>>age
+70
+>>> age2 = age
+>>> age2 = 10
+>>> age
+70
+>>> age2
+10
+
+Attól mert az age 2 értékét módosítjuk az age nem fog változni.
+
+>>>age
+70
+>>> age + 5
+75
+
+>>> 7 = 10
+  File "<stdin>", line 1
+    7 = 10
+    ^
+SyntaxError: cannot assign to literal >>> értékadás bal oldalán nem lehet literál.
+
+>>> aaa = 10
+>>> aaa += 5
+>>> aaa
+15
+>>> aaa +=10
+>>> aaa
+25
+
+aaa +=10
+Ez ugyan az mint:
+aaa = aaa + 10
+
+>>> student = "Sandor"
+>>> student += "XXX"
+>>> student
+'SandorXXX'
+
+ bbb = aaa + 10 + 20 * 6  (az = után experssion van vagy kifejezés) az egyenlősé jel kiértékeli a kifejezést és beteszi a változóba
+ 
+  org = "Training" + 360
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+
+Stringet csak stringgel, Integerrel nem lehet összeconcatenate-olni :D 
+
+Literál típusok:
+"" > közötti a string, akkor is ha szám
+>>> type ("Training")
+<class 'str'>
+>>> type (360)
+<class 'int'>
+
+Helyes context:
+>>> org = "Training" + "360"
+>>> org
+'Training360'
+
+Logikai literál: (Case sensitive)
+True
+Print (5+6) 3as Python , ha Print 5+6 van  zárójel nélkül az 2es Python verzio.
+
+Függvények:
+str = a zárójelben megadott értéket stringé konvertálja
+>>> org = "Training" + str(360)
+>>> org
+'Training360'
+
+>>> "Training" + age
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> "Training" + str(age)
+'Training15'
+
+Változó típusa a benne lévő adat típusa:
+>>> age = 15
+>>> type (age)
+<class 'int'>
+
+Változó int convertálás:
+
+>>> evil = int ("666")
+>>> type (evil)
+<class 'int'>
+
+Szorzás stringekre. Megismétli a stringet 
+>>> "a" * 10
+'aaaaaaaaaa'
+>>> "Training" * 5
+'TrainingTrainingTrainingTrainingTraining'
+
+Python dinamikus típusú programozási nyelv. 
+Egy változónak több értéket is adhatunk. és nem kell megadni a típusát.
+
+több részből álló változónevek:
+student_name = "Józsi" >>> Snake case. Mindig kisbetűket használjunk és alsóvonással válasszuk el
+bizonyos szavakat nem használhatunk változóként.
+pl. másra használt szavak ,ezek foglalt szavak.
+
+Többszörös értékadás:
+>>> x = y = 8
+>>> x
+8
+>>> y
+8
+
+először az Y = 8 az értékeli ki majd az értékeét adja az a nak.
+
+>>> a,b = 4,2
+>>> a
+4
+>>> b
+2
+
+Experssions
+literál, változó és függvény hívás is lehet operandus.
+
+>>> org = "Training" + str(36* 10)
+>>> org
+'Training360'
+
+Ennek az összetett kifejezésnek a kiértékelése:
+A lapon ábra.
+
+% maradéknélküli osztás
+>>> 10 % 3
+1
+
+Hogyan döntsük el hogy páros egy szám vagy pártatlan
+>>> a= 5
+>>> a % 2
+1
+
+>>> a=8
+>>> a % 2
+0
+
+Ha a maradéktalan osztás 1 ad vissza pártalan ha 0 páros
+
+** = négyzetre emelés
+
+>>> r, pi = 12, 3.14159
+>>> s = pi * r**2
+>>> print (s)
+452.38896
+
+>>> type (r), type (pi), type (s)
+(<class 'int'>, <class 'float'>, <class 'float'>)
+
+egész számot lebegőpontossal szorova float lesz. tudja magától
+type (5.0 *5)
+<class 'float'>
+
+>>> m = xxxx
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'xxxx' is not defined
+
+Ha egy változót még nem dekraáltunk az nem létezik.
+
+C:\training\python\hello>notepad first_script.py >>> notepad ot nyit first_script file névvel
+ 
+C:\training\python\hello>python first_script.py  >>> lefuttatja a scriptet
+hello script
+
+notepad be írni >>> print("Hello srcipr")
+ezt meghívja és kiírja.
+
+print("hello script")
+print("hello script2")
+
+Egy sorban két utasítás nem lehet (mint a fenti két függvény hívás) ezeket egymás alá kell írni. ha egymás után van a két print akkor syntax error.
+
+print("hello script\n" + "hello script2")
+Ez sörtéréssel ugyan az , de egy sorban van.
+
+Notepadeban a korábbi feladat:
+r, pi = 12, 3.14159
+s= pi * r**2
+print(s)
+print(type(r), type(pi), type(s)) 
+
+Pycharm:
+Projecteknél
+Virtual Env ha telepítesz akkor a megfelelő project alkönyvtárába telepíti fel így megférnek különböző verziók.
+Venv az nem a project része csak a saját gépünkre kell. Nem szabad globalba dolgozni.
+A Venvbe nem szabad betenni semmit, ha létrehozunk valamit akkor a legeső soron a projecten hozzunk létre bármit
+
+file\settings\wheel int he searchbar\ click on ctrl + wheel
+Ctrl + space a kode kiegészítés
+help\key map reference nyomtasd ki, segít. aszondják XD
+Ctrl+D = duplázza az adott sort
+
+Debugger test:
+a = 2
+print("Vajon ez mi lesz")
+print("Vajon ez mi lesz")
+a = a*2
+print("Vajon ez mi lesz")
+print("Vajon ez mi lesz")
+a = a*2
+print("Vajon ez mi lesz")
+a= a*2
+
+Reformat code : Code \ Reformat code menü vagy ctrl+alt+ L
+
+Adad bekérés gyakorlat. Lehet egész literál, lebegőpontos literál, változó és kifejezés s meghívva
+name = input("Add meg a neved!")
+print ("Szia " + name + "!")
+
+name = input("Add meg a neved!")
+age = 60
+print (name, age)
+
+Ha különböző változóid vannak akkor "," vel különítsd el.
+print(name + " " + str(age)) ez ugyan az ,egy space-t tesz a két érték közé, de jóval macerásabb mert a különböző változókat egytípusra kell hozni. Name : str , age : int amiből str()-el str lesz.
+
+Adj össze 2 számot:
+a = input("Add meg az első számot")
+b = input("Add meg a második számot")
+print(int(a)+ int(b))  >>> a két változó alapból str azt át kell koncertálni, hogy jó legyen. szóval convert with int. Megnézheted a  type(változó)-val hogy milyen típus. segít!
+Vagy
+a = int(input("Add meg az első számot"))
+b = int(input("Add meg a második számot"))
+print(a+b)
+vagy
+a_input = input("Add meg az első számot")
+b_input = input("Add meg a második számot")
+a=int(a_input)
+b=int(b_input)
+print(a+b)
+
+Ctrl+ / >>> kikommenteli a sorokat amik ki vannak jelölve. 
+A kommentelés jele a #
+
+
+Github repo létrehozása:
+git inittel létre kell hozni a local repot
+VCS enable version control opciót kell megnyomni. (el fog tünni) ha a fálj nevek pirosak akkor a nincs verzió követés alatt.
+
+git add paranccsal hozzá kell adni
+git commit-al pedig be kell tölteni a local repoba. Innentől verzió kezelt lesz a file.
+git push parancs pedig a local report felsynceli a remote repoba.
+
+Kiválasztás, feltételes végrehajtás.
+
+If
+booleannak kell lennie a típusnak azaz vagy igaz vagy hamis
+
+print("Start")
+if True: >>> Lehet false is vagy megtörténik vagy semmit nem csinál
+    print("Vegrehajtodik-e?")   >>> egy blockba bármennyi utasítás mehet
+    print("Vegrehajtodik-e?")
+
+print("End")
+
+print("Start")
+to_print = True
+if to_print:
+    print("xxx")
+print("yyy")
+print("End")
+
+behúzás nélkül az if cikluson kívül van és kiírja ha az if False akkor is. ha true akkor mind a két sor kiírásra kerül.
+Output:
+Start
+xxx
+yyy
+End
+
+==  az összehasonlító operátor
+
+print("Start")
+
+print(5 == 5)
+print(5 == 7)
+
+i=7
+j=7
+
+print("End")
+
+output:
+Start
+True
+False
+End
+
+
+print("Start")
+
+i=2
+J=7
+
+to_print = False
+if i > 5:
+    print("xxx")
+    print("yyy")
+
+print("End")
+
+
+input selection file:
+
+i= int(input("Irj be egy számot\n"))   a \n a sortörés nyomorék :D
+
+if i > 0:
+    print("pozitiv")
+
+Páros e a szám???
+
+i= int(input("Irj be egy számot\n"))
+
+if i % 2 == 0:
+    print("páros")
+else:
+    print("Páratlan")
+	
+	i= int(input("Irj be egy számot\n"))
+
+
+pozitiv, negativ, nulla
+
+if i > 0:
+    print ("i pozitiv")
+elif i < 0:
+    print ("i negativ")
+else:
+    print ("i nulla")
+
+if i % 2 == 0:
+    print("páros")
+else:
+    print("Páratlan")
+
+Új feladat
+Kisebb v nagyobb mint száz:
+if az ifben:
+i= int(input("Irj be egy számot\n"))
+
+if i >= 0:
+    print("pozitiv")
+    if i > 100:
+        print("Nagyobb, mint száz")
+    else:
+        print("Kisebb, mint száz")
+
+else:
+    print("negatív")
+
+output
+Irj be egy számot
+ 89
+pozitiv
+Kisebb, mint száz
+
+Process finished with exit code 0
+
+
+Ciklusok:
+Elől tesztelő ciklus : While
+Van egy fej része és egy torzs része,
+Ha a feltétel True (a whileal egysorban dekralált info) akkor végrehatja ha hamis megáll.
+
+i = 0
+while i < 7:
+    print("hét")
+    i = i + 1
+
+print("end")
+
+Hetes szorzótábla:
+a=0
+b=0
+
+while a <= 20:
+    a=a+1
+    b=b+7
+    print(b)
+
+print("end")
+
+Euró = dollár váltó
+
+EUR = 1
+exchange_rate=1.75
+max_eur = 16384
+
+while EUR <16384:
+    print(EUR, "euro = ", EUR * exchange_rate, "dollar")
+    EUR *= 2
+	
+String: Adatszerkezet ( nem egy értéket vesz fel)
+Paraméterek: Hossz
+name = ("John Doe")
+print(len(name))
+
+name = ("John Doe")
+print(name[3])
+[x] x-edik karaktert írja ki úgy hogy 0ától kezd.
+Output:
+n
+azaz 0=J, 1=h, 2=o, 3=n >>>> u see? :D
+
+
+A név betűit írja ki egymás alá
+for c in name:
+    print(c)
+
+fog egy c nevű változót és ez a változó felveszi a name karakter értékeit
+
+Ciklusok
+For each
+for-nál dekralálom a változót
+
+for c in name:  >>> már a for után léterhozom, nem kell külön. innentől hivatkozhatok rá. a második paraméter az "in" után vagy egy adatszerkezet. itt string.
+    print(c)
+	bejárja a változó az utána megadott értékeket. Integer nem bejárható, mert az 1 érték. azaz 1 szám. a str az characterek sorozata.
+	
+String = Statikus, immutable
+Lista = dinamikus adatszerkezet = mutable
+Tuple = list, immutable
+Dictionary = értékpárokat tartalmaz
+
+list:
+names = ["John", "jane"]
+
+tople:
+names = ("john", "Jane")
+
+dictionary.
+
+Függvények:
+Modulok meghívása.
+from match import # 
+meghívszz egy modult
+
+Föggvény: névvel ellátott utasításhalmaz
+
+Unit testing:
+A legkisebb egység a függvény.
+Azt kell tesztelni.
+
+Ha meghívod az a manuális tesztelés.
+Tesztelésre a Pytest -et érdemes használni. Nem a Python része. Külön kell telepíteni.
+Csinálni kell a projectbe egy requirements.txt file-t és bele kell írni hogy pytest. majd jelzi hogy ez a requirement nincs meg és a jobb felső sarokban fel lehet telepíteni.
